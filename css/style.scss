@@ -1,0 +1,124 @@
+@media only screen and (max-width: 990px) {
+  #navbarSupportedContent1{
+  background: rgba(0, 0, 0, 0.596) ;
+  border-radius: 25px;
+  .navlink{
+    
+  }
+}}
+header{
+  width: 100%;
+  height: 85vh;
+  background-image: url(../img/hero.svg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  .hero{
+    width: 100%;
+      height: 60vh;
+      // &-text{
+      //   margin-left: auto;
+      //   margin-right: auto;
+      // }
+  }
+}
+
+/*........................................................................................................*/
+/*......................................... About-US .....................................................*/
+/*........................................................................................................*/
+
+.service{
+  width: 100%;
+  height: auto;
+  &__shape{
+
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    background: #ffffff;
+    clip-path: ellipse(62% 50% at 50% 50%);
+  }
+
+  &__list{
+    position: relative;
+    margin-top: -125px;
+    width: 85%;
+    height: auto;
+    background: #ffffff;
+    border: none;
+    box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+    border-radius: 22px;
+    &__item{      
+        opacity: 40%; 
+        // padding-right: 85px;
+        // border-right: 3px solid rgba(80, 80, 80, 0.19);
+        // &:nth-child(4){
+        //   padding-right: 0px;
+        //   border: none;
+        // }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text{
+    h1{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 20px;
+    }   
+  }
+  .service{
+  
+    &__shape{
+
+      position: absolute;
+      width: 100%;
+      height: 35vh;
+      background: #ffffff;
+      clip-path: ellipse(70% 42% at 50% 50%);
+      transition: .5 ease-out;
+    }
+  
+    &__list{
+      position: relative;
+      margin-top: -175px;
+      width: 75%;
+      height: auto;
+      background: #ffffff;
+      border: none;
+      box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+      border-radius: 22px;
+      &__item{      
+          opacity: 40%; 
+          // padding-right: 85px;
+          // border-right: 3px solid rgba(80, 80, 80, 0.19);
+          // &:nth-child(4){
+          //   padding-right: 0px;
+          //   border: none;
+          // }
+      }
+  
+    }
+  }
+}
+
+.about-us{
+  &__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__illustration{
+    img{
+      width: auto;
+      height: 305px;
+    }
+  }
+}

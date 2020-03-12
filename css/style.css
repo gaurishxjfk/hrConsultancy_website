@@ -1,0 +1,144 @@
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #ffffff;
+	display: block;
+	transition: all 0.2s;
+  margin-top: 4px;
+  border-radius: 25px;
+  cursor : pointer;
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/* @media only screen and (max-width: 990px) {
+  #navbarSupportedContent1 {
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 25px;
+  }
+} */
+
+header {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../img/hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .hero {
+  width: 100%;
+  height: 60vh;
+}
+
+/*........................................................................................................*/
+/*......................................... About-US .....................................................*/
+/*........................................................................................................*/
+.service {
+  width: 100%;
+  height: auto;
+}
+
+.service__shape {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  background: #ffffff;
+  -webkit-clip-path: ellipse(62% 50% at 50% 50%);
+          clip-path: ellipse(62% 50% at 50% 50%);
+}
+
+.service__list {
+  position: relative;
+  margin-top: -125px;
+  width: 85%;
+  height: auto;
+  background: #ffffff;
+  border: none;
+  -webkit-box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+          box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+  border-radius: 22px;
+}
+
+.service__list__item {
+  opacity: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text h3 {
+    font-size: 20px;
+  }
+  .service__shape {
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    background: #ffffff;
+    -webkit-clip-path: ellipse(70% 42% at 50% 50%);
+            clip-path: ellipse(70% 42% at 50% 50%);
+    -webkit-transition: .5 ease-out;
+    transition: .5 ease-out;
+  }
+  .service__list {
+    position: relative;
+    margin-top: -175px;
+    width: 75%;
+    height: auto;
+    background: #ffffff;
+    border: none;
+    -webkit-box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+            box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
+    border-radius: 22px;
+  }
+  .service__list__item {
+    opacity: 40%;
+  }
+}
+
+.about-us__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-us__illustration img {
+  width: auto;
+  height: 305px;
+}
+/*# sourceMappingURL=style.css.map */
