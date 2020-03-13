@@ -1,51 +1,58 @@
 .icon-bar {
-	width: 22px; 
-	height: 2px;
-	background-color: #ffffff;
-	display: block;
-	transition: all 0.2s;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   margin-top: 4px;
   border-radius: 25px;
-  cursor : pointer;
+  cursor: pointer;
 }
- 
+
 .navbar-toggler {
   border: none;
   background: transparent !important;
 }
 
 .navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
 }
- 
+
 .navbar-toggler .middle-bar {
   opacity: 0;
 }
- 
+
 .navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
 }
- 
+
 .navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
- 
+
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
 }
- 
+
 .navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
-/* @media only screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   #navbarSupportedContent1 {
     background: rgba(0, 0, 0, 0.596);
     border-radius: 25px;
   }
-} */
+}
 
 header {
   width: 100%;
@@ -127,14 +134,46 @@ header .hero {
   }
 }
 
+.about-us {
+  margin-top: 100px;
+}
+
 .about-us__title {
+  color: #194866;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-size: 48px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-transform: uppercase;
-  color: #000000;
+}
+
+.about-us__description {
+  margin-top: 20px;
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  opacity: 59%;
+  line-height: 34px;
+  letter-spacing: 0.13em;
+}
+
+.about-us__CTA {
+  margin-top: 20px;
+}
+
+.about-us__CTA img {
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 10px;
+  max-width: 155px;
+}
+
+.about-us__CTA h3 {
+  cursor: pointer;
+  position: relative;
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .about-us__illustration img {

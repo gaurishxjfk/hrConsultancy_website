@@ -1,4 +1,51 @@
-@media only screen and (max-width: 990px) {
+@mixin colorFont($color , $size , $weight){
+  color : $color;
+  font-family : 'Roboto', sans-serif;
+  font-size : $size;
+  font-weight: $weight;
+}
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #ffffff;
+	display: block;
+	transition: all 0.2s;
+  margin-top: 4px;
+  border-radius: 25px;
+  cursor : pointer;
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+@include media-breakpoint-up(lg)  {
   #navbarSupportedContent1{
   background: rgba(0, 0, 0, 0.596) ;
   border-radius: 25px;
@@ -61,15 +108,15 @@ header{
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .hero-text{
-    h1{
-      font-size: 32px;
-    }
-    h3{
-      font-size: 20px;
-    }   
-  }
+// @include media-breakpoint-up(md)  {
+//   .hero-text{
+//     h1{
+//       font-size: 32px;
+//     }
+//     h3{
+//       font-size: 20px;
+//     }   
+//   }
   .service{
   
     &__shape{
@@ -103,17 +150,33 @@ header{
   
     }
   }
-}
+
 
 .about-us{
+  margin-top: 100px;
   &__title{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-transform: uppercase;
-    color: #000000;
+    @include colorFont(#194866, 48px , bold);
+  }
+  &__description{
+    margin-top: 20px;
+    @include colorFont(#194866, 20px , normal);
+    // opacity: 59%;
+    line-height: 34px;
+    letter-spacing: 0.13em;
+  }
+  &__CTA{
+    margin-top: 20px;
+    img{
+      position: absolute;
+      margin-top: 17px;
+      margin-left: 10px;
+      max-width: 155px;
+    }
+    h3{
+      cursor: pointer;
+      position: relative;
+      @include colorFont(#194866, 26px , bold)
+    }
   }
   &__illustration{
     img{
@@ -122,3 +185,7 @@ header{
     }
   }
 }
+
+@include media-breakpoint-up(lg) { 
+
+ }
