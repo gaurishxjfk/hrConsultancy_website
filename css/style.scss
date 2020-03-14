@@ -12,12 +12,18 @@
 	transition: all 0.2s;
   margin-top: 4px;
   border-radius: 25px;
-  cursor : pointer;
+
+  }
+
+  button:focus {
+    outline: 1px dotted;
+    outline: none -webkit-focus-ring-color;
 }
  
 .navbar-toggler {
   border: none;
   background: transparent !important;
+
 }
 
 .navbar-toggler .top-bar {
@@ -45,6 +51,7 @@
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
+
 @include media-breakpoint-up(lg)  {
   #navbarSupportedContent1{
   background: rgba(0, 0, 0, 0.596) ;
@@ -160,7 +167,6 @@ header{
   &__description{
     margin-top: 20px;
     @include colorFont(#194866, 20px , normal);
-    // opacity: 59%;
     line-height: 34px;
     letter-spacing: 0.13em;
   }
