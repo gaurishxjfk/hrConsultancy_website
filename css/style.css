@@ -51,6 +51,13 @@ button:focus {
           transform: rotate(0);
 }
 
+@media only screen and (max-width: 990px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 25px;
+  }
+}
+
 header {
   width: 100%;
   height: 85vh;
@@ -145,6 +152,43 @@ header .hero {
   height: 305px;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-us {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .about-us__title {
+    color: #194866;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .about-us__description {
+    margin-top: 15px;
+    color: #194866;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.13em;
+  }
+  .about-us__CTA {
+    margin-top: 20px;
+  }
+  .about-us__CTA img {
+    display: none;
+  }
+  .about-us__CTA h3 {
+    cursor: pointer;
+    position: relative;
+    color: #194866;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
 /*........................................................................................................*/
 /*......................................... Features .....................................................*/
 /*.......................................................................................................*/
@@ -194,5 +238,23 @@ header .hero {
   font-size: 16px;
   font-weight: bold;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .features {
+    margin-top: 50px;
+  }
+  .features__title {
+    color: #194866;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .features__section__info {
+    text-align: center;
+  }
+  .features__section__info--description {
+    width: 235px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

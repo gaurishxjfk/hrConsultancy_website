@@ -51,7 +51,12 @@
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
-
+@media only screen and (max-width: 990px) {
+  .navbar-nav{
+    background: rgba(0, 0, 0, 0.596) ;
+       border-radius: 25px;
+  }
+}
 // @include media-breakpoint-up(lg)  {
 //   #navbarSupportedContent1{
 //   background: rgba(0, 0, 0, 0.596) ;
@@ -139,6 +144,36 @@ header{
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .about-us{
+    margin-top: 100px;
+    text-align: center;
+
+    &__title{
+      @include colorFont(#194866, 36px , bold);
+    }
+    &__description{      
+      margin-top: 15px;
+      @include colorFont(#194866, 20px , normal);
+      line-height: 24px;
+      letter-spacing: 0.13em;
+    }
+    &__CTA{
+      margin-top: 20px;
+      img{
+        display: none
+      }
+      h3{
+        cursor: pointer;
+        position: relative;
+        @include colorFont(#194866, 20px , bold);
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
 
 
  /*........................................................................................................*/
@@ -173,4 +208,18 @@ header{
       }
     }
   }
+}
+@media only screen and (max-width: 768px) {
+  .features{
+    margin-top: 50px;
+    &__title{
+      @include colorFont(#194866,32px ,bold);
+    }
+  }
+  .features__section__info{
+    text-align: center;
+    &--description{
+    width: 235px;
+  }
+}
 }
