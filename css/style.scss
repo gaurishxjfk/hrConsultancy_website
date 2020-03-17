@@ -66,12 +66,8 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   .hero{
-    width: 100%;
-      height: 60vh;
-      // &-text{
-      //   margin-left: auto;
-      //   margin-right: auto;
-      // }
+    width: 90%;
+    height: 60vh;
   }
 }
 
@@ -83,17 +79,17 @@ header{
   width: 100%;
   height: auto;
   &__shape{
-
     position: absolute;
     width: 100%;
     height: 35vh;
     background: #ffffff;
+    margin-top: 30px;
     clip-path: ellipse(62% 50% at 50% 50%);
   }
 
   &__list{
     position: relative;
-    margin-top: -125px;
+    margin-top: -140px;
     width: 85%;
     height: auto;
     background: #ffffff;
@@ -101,27 +97,13 @@ header{
     box-shadow: -1px 4px 78px rgba(161, 63, 63, 0.19);
     border-radius: 22px;
     &__item{      
-        opacity: 40%; 
-        // padding-right: 85px;
-        // border-right: 3px solid rgba(80, 80, 80, 0.19);
-        // &:nth-child(4){
-        //   padding-right: 0px;
-        //   border: none;
-        // }
+        opacity: .4; 
     }
 
   }
 }
 
-// @include media-breakpoint-up(md)  {
-//   .hero-text{
-//     h1{
-//       font-size: 32px;
-//     }
-//     h3{
-//       font-size: 20px;
-//     }   
-//   }
+
  
 
 
@@ -173,7 +155,8 @@ header{
   }
   &__section{
     &--img{
-    
+      width: 250px;
+      height: 175px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     &__info{
@@ -182,6 +165,7 @@ header{
       }
       &--description{
         @include colorFont(#194866, 18px , normal)
+   
       }
       &--knowmore{
         @include colorFont(#194866, 16px , bold);
