@@ -155,7 +155,6 @@ header .hero {
 @media only screen and (max-width: 768px) {
   .about-us {
     margin-top: 100px;
-    text-align: center;
   }
   .about-us__title {
     color: #194866;
@@ -176,7 +175,10 @@ header .hero {
     margin-top: 20px;
   }
   .about-us__CTA img {
-    display: none;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 14px;
+    max-width: 105px;
   }
   .about-us__CTA h3 {
     cursor: pointer;
@@ -185,7 +187,6 @@ header .hero {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
   }
 }
 
@@ -273,6 +274,10 @@ header .hero {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: normal;
+}
+
+.person :focus {
+  outline: none !important;
 }
 
 .person__name {

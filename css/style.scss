@@ -147,7 +147,7 @@ header{
 @media only screen and (max-width: 768px) {
   .about-us{
     margin-top: 100px;
-    text-align: center;
+    
 
     &__title{
       @include colorFont(#194866, 36px , bold);
@@ -161,13 +161,16 @@ header{
     &__CTA{
       margin-top: 20px;
       img{
-        display: none
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 14px;
+        max-width: 105px;
       }
       h3{
         cursor: pointer;
         position: relative;
         @include colorFont(#194866, 20px , bold);
-        text-decoration: underline;
+        //text-decoration: underline;
       }
     }
 
@@ -234,6 +237,9 @@ header{
   }
 }
 .person{
+  :focus {
+    outline: none !important;
+}
   &__img{}
   &__name{
     @include colorFont(#194866,24px ,bold )
