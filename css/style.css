@@ -257,4 +257,45 @@ header .hero {
     width: 235px;
   }
 }
+
+/*........................................................................................................*/
+/*......................................... Team .....................................................*/
+/*.......................................................................................................*/
+.title {
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.title__info {
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.person__name {
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.person__position {
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: italic;
+  font-style: italic;
+}
+
+.person__info {
+  color: #194866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: italic;
+  width: 330px;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

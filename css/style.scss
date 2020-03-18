@@ -223,3 +223,29 @@ header{
   }
 }
 }
+
+/*........................................................................................................*/
+/*......................................... Team .....................................................*/
+/*.......................................................................................................*/
+.title{
+  @include colorFont(#194866,36px , bold)
+  &__info{
+    @include colorFont(#194866,20px , normal)
+  }
+}
+.person{
+  &__img{}
+  &__name{
+    @include colorFont(#194866,24px ,bold )
+  }
+  &__position{
+    @include colorFont(#194866,18px ,italic);
+    font-style: italic;
+  }
+  &__info{
+    @include colorFont(#194866,20px ,italic);
+    width: 330px;
+    font-style: italic;
+  }
+  &__socialMedia{}
+}
