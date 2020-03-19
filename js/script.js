@@ -7,7 +7,8 @@ $('.slider').slick({
       breakpoint: 1100,
       settings: {
         arrows: false,
-       
+        autoplay : true,
+        autoplaySpeed : 1000,
        
         slidesToShow: 2
       }
@@ -16,7 +17,8 @@ $('.slider').slick({
       breakpoint: 768,
       settings: {
         arrows: false,
-       
+        autoplay : true,
+        autoplaySpeed : 1000,
         
         slidesToShow: 1
       }
